@@ -5,7 +5,7 @@ categories: [Git&&GitHub]
 tags: [git,github]  
 ---  
 > various remote repository hosting sites: 
-[GitHub](http://github.com/)  
+[GitHub](https://github.com/)  
 [BitBucket](https://bitbucket.org/product)  
 [Gitlab](https://gitlab.com/)  
 
