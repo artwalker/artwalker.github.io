@@ -1,6 +1,6 @@
 ---
 title: 18 Study guide Git Revert  
-date: 2024-07-05 22:31:07 +0800  
+date: 2024-07-05 22:28:22 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
 ---

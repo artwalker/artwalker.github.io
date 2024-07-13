@@ -1,6 +1,6 @@
 ---
 title: 10 Skipping the staging area  
-date: 2024-07-05 22:32:00 +0800  
+date: 2024-07-05 22:29:00 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
 ---

@@ -1,6 +1,6 @@
 ---
 title: 12 Deleting and Renaming Files  
-date: 2024-07-05 22:31:01 +0800  
+date: 2024-07-05 22:28:29 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
 ---

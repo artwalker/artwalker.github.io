@@ -1,6 +1,6 @@
 ---
 title: 11 Getting more information from the user  
-date: 2024-07-05 22:31:00 +0800  
+date: 2024-07-05 22:28:30 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
 ---
