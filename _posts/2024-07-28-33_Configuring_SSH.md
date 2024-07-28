@@ -7,7 +7,7 @@ tags: [git,github]
 # Configuring SSH
 Computer ports are software-based points where a network connection begins and ends. When using Secure Shell (SSH), the client connects to the server on port 22. After the connection is made, the server sends its public key to the client. Then the client and server negotiate a set of encryption rules, called an encryption algorithm, that both machines can support. When the two machines are in agreement on the encryption algorithm, the server starts a login shell for the user. 
 
-![Configuring SSH](image.png)
+![Configuring SSH](../assets/git_github/image.png)
 
 ## Configuring an SSH client
 SSH configuration instructions will be different depending on your operating system and the implementation of SSH. On the other hand, instructions for a client to generate its SSH key and connect to a server are more general. Let’s look at how to set up the command-line OpenSSH client and connect to a remote host for the first time. 
