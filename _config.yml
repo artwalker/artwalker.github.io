@@ -14,7 +14,8 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Think Different - Do Great # the main title
+# title: Think Different - Do Great # the main title
+title: Artwalker # the main title
 
 tagline: Artist && Computer Engineer # it will display as the sub-title
 
