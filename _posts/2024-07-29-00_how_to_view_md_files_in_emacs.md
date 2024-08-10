@@ -9,7 +9,7 @@ tags: [emacs]
 
 * Install impatient-mode with `M-x package-install RET impatient-mode
   RET, given you have configured package.el to use
-  the [melpa](http://wikemacs.org/wiki/Melpa) repository.
+  the [melpa](https://wikemacs.org/wiki/Melpa) repository.
 * Start an emacs' web server with `M-x httpd-start.`
 * Start impatient mode in the buffers you're interested to live
   preview: `M-x impatient-mode.`
