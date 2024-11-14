@@ -1,3 +1,9 @@
+---  
+title: 9 Methods for undoing changes  
+date: 2024-07-30 06:00:00 +0800  
+categories: [emacs]  
+tags: [emacs]  
+--- 
 ## Command
 ```bash
 $ vim all_checks.py
