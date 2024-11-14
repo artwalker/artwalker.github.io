@@ -1,5 +1,5 @@
 ---  
-title: 9 Methods for undoing changes  
+title: 40 Another Rebasing example  
 date: 2024-07-30 06:00:00 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
