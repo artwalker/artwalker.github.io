@@ -1,5 +1,5 @@
 ---
-title: 36 Public vs private keys  
+title: 35 Public vs private keys  
 date: 2024-07-04 22:28:04 +0800  
 categories: [Git&&GitHub]  
 tags: [git,github]  
