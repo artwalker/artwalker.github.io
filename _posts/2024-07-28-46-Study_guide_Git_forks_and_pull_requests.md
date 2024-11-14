@@ -26,7 +26,7 @@ When creating multiple commits, a number next to the pull request serves as the 
 For more information on creating pull requests, click the following link: [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 ## Pull request merges
-![SquashAndMerge](./SquashAndMerge.png)
+![SquashAndMerge](../assets/git_github/SquashAndMerge.png)
 
 You can merge pull requests by retaining the commits. Below is a list of pull request merge options that you can use when merging pull requests.
 

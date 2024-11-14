@@ -10,7 +10,7 @@ Besides serving as a repository for your code and tracking changes to your code 
 
 GitHub offers multiple tools to manage and plan your work. For example, GitHub Projects is a flexible tool for tracking and managing work on GitHub. You can use Projects to create an adaptable spreadsheet, task-board, and road map which integrates with your issues and pull requests. With GitHub projects, you can filter, sort, and group your issues and pull requests and customize to fit your team’s workflow. Projects can be created in a repository, and then issues can be added to them.
 
-![](./GitHub_Projects.png)
+![](../assets/git_github/GitHub_Projects.png)
 
 ## GitHub Issues
 
@@ -18,11 +18,11 @@ GitHub Issues is a part of GitHub Projects, and it provides a way to track tasks
 
 Here’s a screenshot of the top open issues for a very active Python application on GitHub:
 
-![](./GitHub_Issues.png)
+![](../assets/git_github/GitHub_Issues.png)
 
 ## Traditional project management
 You can also view open issues in a more traditional project management format, with status, assignees, estimates, and more:
-![](./Traditional_project_management.png)
+![](../assets/git_github/Traditional_project_management.png)
 GitHub also supports extensive automation. You can define workflows that update issues or projects automatically as issues change or comments are added. 
 
 Resources for more information
