@@ -1,0 +1,272 @@
+---  
+title: 39 Modifying the emacs Files Directly  
+date: 2024-07-30 07:59:20 +0800  
+categories: [emacs]  
+tags: [emacs]  
+---
+* Six Commands to Get You Started
+** Know more: man
+#+begin_src shell
+man wc
+#+end_src
+** 1: wc
+#+begin_src shell
+wc ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+: 7  51 325 ./command_1_wc/animals.txt
+
+#+begin_src shell
+wc -l ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+: 7 ./command_1_wc/animals.txt
+
+#+begin_src shell
+wc -w ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+: 51 ./command_1_wc/animals.txt
+
+#+begin_src shell
+wc -c ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+: 325 ./command_1_wc/animals.txt
+
+#+begin_src shell
+ls -l ./command_1_wc
+#+end_src
+
+#+RESULTS:
+| total      | 16 |             |             |     |     |    |      |             |
+| -rw-rw-r-- |  1 | xinxingwang | xinxingwang | 325 | Oct | 26 | 2023 | animals.txt |
+| -rw-rw-r-- |  1 | xinxingwang | xinxingwang |  16 | Oct | 26 | 2023 | myfile      |
+| -rw-rw-r-- |  1 | xinxingwang | xinxingwang |  21 | Oct | 26 | 2023 | myfile2     |
+| -rw-rw-r-- |  1 | xinxingwang | xinxingwang |  31 | Oct | 26 | 2023 | test.py     |
+
+#+begin_src shell
+ls -l ./command_1_wc | wc -l
+#+end_src
+
+#+RESULTS:
+: 5
+
+#+begin_src shell
+wc ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+: 7  51 325 ./command_1_wc/animals.txt
+
+#+begin_src shell
+wc ./command_1_wc/animals.txt | wc -w
+#+end_src
+
+#+RESULTS:
+: 4
+
+#+begin_src shell
+wc ./command_1_wc/animals.txt | wc -w | wc
+#+end_src
+
+#+RESULTS:
+: 1       1       2
+
+*** tip
+#+begin_src shell
+ls /bin
+#+end_src
+
+#+RESULTS:
+| bash        dir         kmod      networkctl       red     tar |
+| ... |
+
+#+begin_src shell
+ls /bin | cat
+#+end_src
+
+#+RESULTS:
+| bash |
+| dir |
+| bunzip2 |
+| bsd-csh|
+| ... |
+
+#+begin_src shell
+ls ./command_1_wc
+#+end_src
+
+#+RESULTS:
+| animals.txt myfile myfile2 test.py |
+
+#+begin_src shell
+ls ./command_1_wc | wc -l
+#+end_src
+
+#+RESULTS:
+: 4
+
+#+begin_src shell
+ls -1 ./command_1_wc
+#+end_src
+
+#+RESULTS:
+| animals.txt |
+| myfile      |
+| myfile2     |
+| test.py     |
+
+#+begin_src shell
+#force multiple columns 
+ls -C ./command_1_wc
+#+end_src
+
+#+RESULTS:
+: animals.txt  myfile  myfile2  test.py
+** 2: head
+#+begin_src shell
+head -n3 ./command_1_wc/animals.txt
+#If you omit the -n option, head defaults to 10 lines (-n10).
+#+end_src
+
+#+RESULTS:
+| python | Programming Python    | 2010 | Lutz, Mark       |
+| snail  | SSH, The Secure Shell | 2005 | Barrett, Daniel  |
+| alpaca | Intermediate Perl     | 2012 | Schwartz, Randal |
+
+#+begin_src shell
+head -n3 ./command_1_wc/animals.txt | wc -w
+#+end_src
+
+#+RESULTS:
+: 20
+
+#+begin_src shell
+ls /bin | head -n5
+#+end_src
+
+#+RESULTS:
+| [        |
+| 411toppm |
+| 7z       |
+| 7za      |
+| 7zr      |
+|          |
+** 3: cut
+#+begin_src shell
+cut -f2 ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+| Programming  | Python |              |          |          |
+| SSH,         | The    | Secure       | Shell    |          |
+| Intermediate | Perl   |              |          |          |
+| MySQL        | High   | Availability |          |          |
+| Linux        | in     | a            | Nutshell |          |
+| Cisco        | IOS    | in           | a        | Nutshell |
+| Writing      | Word   | Macros       |          |          |
+
+#+begin_src shell
+cut -f2 ./command_1_wc/animals.txt | head -n3
+#+end_src
+
+#+RESULTS:
+| Programming  | Python |        |       |
+| SSH,         | The    | Secure | Shell |
+| Intermediate | Perl   |        |       |
+
+#+begin_src shell
+cut -f1,3 ./command_1_wc/animals.txt | head -n3
+#+end_src
+
+#+RESULTS:
+| python | 2010 |
+| snail  | 2005 |
+| alpaca | 2012 |
+
+#+begin_src shell
+cut -f2-4 ./command_1_wc/animals.txt | head -n3
+#+end_src
+
+#+RESULTS:
+| Programming Python    | 2010 | Lutz, Mark       |
+| SSH, The Secure Shell | 2005 | Barrett, Daniel  |
+| Intermediate Perl     | 2012 | Schwartz, Randal |
+
+#+begin_src shell
+cut -c1-3 ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+| pyt |
+| sna |
+| alp |
+| rob |
+| hor |
+| don |
+| ory |
+
+#+begin_src shell
+cut -f4 ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+| Lutz     | Mark    |
+| Barrett  | Daniel  |
+| Schwartz | Randal  |
+| Bell     | Charles |
+| Siever   | Ellen   |
+| Boney    | James   |
+| Roman    | Steven  |
+
+#+begin_src shell
+cut -f4 ./command_1_wc/animals.txt | cut -d, -f1
+#+end_src
+
+#+RESULTS:
+| Lutz     |
+| Barrett  |
+| Schwartz |
+| Bell     |
+| Siever   |
+| Boney    |
+| Roman    |
+
+** 4: grep
+#+begin_src shell
+grep Nutshell ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+| horse  | Linux in a Nutshell     | 2009 | Siever, Ellen |
+| donkey | Cisco IOS in a Nutshell | 2005 | Boney, James  |
+
+#+begin_src shell
+grep -v Nutshell ./command_1_wc/animals.txt
+#+end_src
+
+#+RESULTS:
+| python | Programming Python      | 2010 | Lutz, Mark       |
+| snail  | SSH, The Secure Shell   | 2005 | Barrett, Daniel  |
+| alpaca | Intermediate Perl       | 2012 | Schwartz, Randal |
+| robin  | MySQL High Availability | 2014 | Bell, Charles    |
+| oryx   | Writing Word Macros     | 1999 | Roman, Steven    |
+
+#+begin_src shell
+grep Perl ./command_1_wc/*.txt
+#+end_src
+
+#+RESULTS:
+| alpaca | Intermediate Perl | 2012 | Schwartz, Randal |
+
+#+begin_src shell
+ls -l /usr/lib | cut -c1 | grep d | wc -l
+#+end_src
+
+#+RESULTS:
+: 145
