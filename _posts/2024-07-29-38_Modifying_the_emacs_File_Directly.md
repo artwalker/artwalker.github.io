@@ -6,7 +6,7 @@ tags: [emacs]
 ---
 Simply invoke Emacs with the command-line option **-q**, and Emacs will not run your *.emacs* file.
 
-[.emacs exsiting file](http://www.dotemacs.de/)
+[.emacs exsiting file](https://www.dotemacs.de/)
 
 ### Saving .emacs
 
