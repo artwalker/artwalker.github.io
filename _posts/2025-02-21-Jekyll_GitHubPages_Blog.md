@@ -1,6 +1,6 @@
 ---  
 title: Jeklly GitHubPages Blog  
-date: 2025-02-21 14:09:25 +0800  
+date: 2025-02-21 14:09:25 +0800   
 categories: [blog]  
 tags: [blog]  
 ---  
@@ -18,13 +18,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 添加 rbenv 到 PATH 并初始化
 ```bash
-echo "export PATH=\"$PATH\"" >> ~/.bashrc
-```
-
-安装并设置 Ruby 版本
-```bash
-rbenv install 3.2.0
-rbenv global 3.2.0
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
@@ -37,21 +31,19 @@ source ~/.bashrc
 ```bash
 ruby -v
 ```
+
 安装jekyll
 ```bash
 gem -v
-sudo gem install jekyll bundler
+gem install jekyll bundler
+vim Gemfile
+# add the following content
+gem 'jekyll', '~> 4.4.1'
+gem 'jekyll-theme-chirpy', '~> 7.2.4'
+# 去如下地址查看版本：
+# https://github.com/cotes2020/jekyll-theme-chirpy/tags
 ```
 
-打开 ~/.bashrc 文件进行编辑
-```bash
-nano ~/.bashrc
-```
-
-在文件末尾添加以下内容
-```bash
-export PATH="/usr/local/bin:$PATH"
-```
 # 2. 博客设置
 首先使用git clone拉取自己的博客仓库，然后进入项目根目录文件夹中，运行命令：
 ```bash
