@@ -3,7 +3,7 @@ title: Jeklly GitHubPages Blog
 date: 2025-02-21 14:09:25 +0800  
 categories: [blog]  
 tags: [blog]  
---- 
+---  
 # 1. 安装Ruby
 更新并安装依赖
 ```bash
