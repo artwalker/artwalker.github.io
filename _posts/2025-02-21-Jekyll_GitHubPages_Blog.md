@@ -39,6 +39,8 @@ gem install jekyll bundler
 vim Gemfile
 # add the following content
 gem 'jekyll', '~> 4.4.1'
+# 去如下地址查看版本:
+# https://rubygems.org/gems/jekyll/versions
 gem 'jekyll-theme-chirpy', '~> 7.2.4'
 # 去如下地址查看版本：
 # https://github.com/cotes2020/jekyll-theme-chirpy/tags
