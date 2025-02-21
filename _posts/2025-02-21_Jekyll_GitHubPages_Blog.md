@@ -25,7 +25,7 @@ echo "export PATH=\"$PATH\"" >> ~/.bashrc
 ```bash
 rbenv install 3.2.0
 rbenv global 3.2.0
-echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 ```
 
 重新加载 .bashrc
