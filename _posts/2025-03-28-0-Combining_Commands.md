@@ -1,6 +1,6 @@
 ---
 title: Combining Commands
-date: 2025-02-26 13:15:26 +0800
+date: 2025-03-26 13:15:26 +0800
 categories: [efficient-linux]
 tags: [Linux,Command]
 ---
