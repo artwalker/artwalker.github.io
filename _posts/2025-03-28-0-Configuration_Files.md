@@ -1,5 +1,5 @@
 ---
-title: 1 Combining Commands
+title: 0 Configuration Files
 date: 2025-03-26 12:15:26 +0800
 categories: [efficient-linux]
 tags: [Linux,Command]
