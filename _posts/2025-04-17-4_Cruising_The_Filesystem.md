@@ -1,5 +1,5 @@
 ---
-title: 4 RCruising The Filesystem 
+title: 4 Cruising The Filesystem 
 date: 2025-04-17 18:13:00 +0800 
 categories: [efficient-linux] 
 tags: [Linux,Command]
