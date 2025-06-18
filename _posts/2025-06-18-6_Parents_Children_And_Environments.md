@@ -1,6 +1,6 @@
 ---
 title: 6 Parents Children And Environments 
-date: 2025-06-18 18:54:00 +0800 
+date: 2025-06-18 14:54:00 +0800 
 categories: [efficient-linux] 
 tags: [Linux,Command]
 ---
