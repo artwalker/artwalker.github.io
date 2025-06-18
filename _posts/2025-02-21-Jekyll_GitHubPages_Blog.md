@@ -9,8 +9,6 @@ tags: [blog]
 ```bash
 sudo apt update
 sudo apt install -y git build-essential libssl-dev libreadline-dev zlib1g-dev rbenv libyaml-dev ruby3.0-dev
-# 若系统报需要更新ruby到3.1，使用以下命令行更新
-sudo apt upgrade ruby
 ```
 克隆 rbenv 和 ruby-build
 ```bash
