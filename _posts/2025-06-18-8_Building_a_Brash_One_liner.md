@@ -1,5 +1,5 @@
 ---
-title: 7 Building a Brash One-Liner
+title: 8 Building a Brash One-Liner
 date: 2025-06-20 12:54:00 +0800 
 categories: [efficient-linux] 
 tags: [Linux,Command]
